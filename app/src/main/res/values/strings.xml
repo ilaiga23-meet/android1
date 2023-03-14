@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="please_sign_in" />
+    <string name="enter_email" />
+    <string name="enter_password" />
+    <string name="submit" />
+    <string name="sign_up_here" />
+    <string name="name" />
+    <string name="email" />
+    <string name="password" />
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ExtraText"
+    android:orientation="vertical"
+    android:gravity="center"
+
+    >
+
+
+    <TextView
+        android:id="@+id/signuptitle"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="signup"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="name"
+        android:ems="10"
+        android:textSize="30sp"
+        android:autofillHints=""
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:background="@drawable/edit_text_shape"
+        />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        android:textSize="30sp"
+        android:autofillHints=""
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:background="@drawable/edit_text_shape"
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:textSize="30sp"
+        android:autofillHints=""
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:background="@drawable/edit_text_shape"/>
+
+    <Button
+        android:id="@+id/submitsignup"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:background="@drawable/button_design" />
+
+    <Button
+        android:id="@+id/signinpage"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:text="signin"
+        android:background="@drawable/button_design"/>
+</LinearLayout>
