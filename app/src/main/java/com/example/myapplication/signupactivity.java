@@ -45,11 +45,11 @@ public class signupactivity extends AppCompatActivity implements View.OnClickLis
 
     @Override
     public void onClick(View view) {
-        if(view==signin){
+        if(view==submit && email.length()>0 && password.length()>7 && name.length()>0){
             create_user(email.getText().toString(), password.getText().toString());
         }
-        if(view==submit && email.length()>0 && password.length()>7 && name.length()>0){
-            Intent i = new Intent(this, home_activity1.class);
+        if(view==signin){
+            Intent i = new Intent(this, MainActivity.class);
             i.putExtra("email", email.getText().toString());
             startActivity(i);
         }

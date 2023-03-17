@@ -10,6 +10,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.google.firebase.database.ValueEventListener;
+
 import java.util.ArrayList;
 
 public class UserArrayAdapter extends ArrayAdapter<User> {
@@ -19,7 +21,7 @@ public class UserArrayAdapter extends ArrayAdapter<User> {
 
     public UserArrayAdapter(@NonNull Context context, int resource, ArrayList<User> objects) {
         super(context, resource, objects);
-        this.context = context;
+        this.context = (Context) context;
         this.resource = resource;
     }
 

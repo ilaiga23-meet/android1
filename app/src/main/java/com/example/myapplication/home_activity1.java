@@ -43,6 +43,10 @@ public class home_activity1 extends AppCompatActivity {
                 for(DataSnapshot data: snapshot.getChildren()){
                     users.add(data.getValue(User.class));
                 }
+
+                listView= findViewById(R.id.users_Listview);
+                arrayAdapter= new UserArrayAdapter(home_activity1.this, R.layout.users_row, users);
+                listView.setAdapter(arrayAdapter);
             }
 
             @Override
@@ -51,14 +55,7 @@ public class home_activity1 extends AppCompatActivity {
             }
         });
         mAuth = FirebaseAuth.getInstance();
-        Intent intent = getIntent();
-        String email = intent.getStringExtra("email");
-        title.setText(email);
-        listView= findViewById(R.id.users_Listview);
-        arrayAdapter= new UserArrayAdapter(this, R.layout.users_row, users);
-        listView.setAdapter(arrayAdapter);
     }
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu, menu);
